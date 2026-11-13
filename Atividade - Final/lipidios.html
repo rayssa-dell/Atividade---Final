@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+    <title>Lipídios | Quimicou</title>
+</head>
+<body>
+
+    <button class="tema-btn" id="mudar-tema" type="button">
+        Mudar tema
+    </button>
+
+    <header class="cabecalho">
+        <h1>Quimicou</h1>
+        <p>Conheça os lipídios</p>
+    </header>
+    <button type="button" class="menu-botao" aria-label="Abrir menu">☰
+    </button>
+
+    <nav class="menu">
+         <a href="lipidios.html" class="ativo">Lipídios</a>
+        <a href="index.html">Início</a>
+        <a href="acidos-nucleicos.html">Ácidos nucleicos</a>
+        <a href="carboidratos.html">Carboidratos</a>
+        <a href="polimeros.html">Polímeros</a>
+        <a href="proteinas.html">Proteínas</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <main>
+        <section class="apresentacao">
+            <h2>O que são lipídios?</h2>
+            <p>
+                Os lipídios são moléculas orgânicas que incluem gorduras,
+                óleos, ceras e esteroides. São pouco solúveis em água e
+                desempenham funções importantes nos organismos, como
+                armazenamento de energia, composição das membranas celulares
+                e proteção térmica.
+            </p>
+        </section>
+
+        <section class="conteudo">
+            <article class="card">
+                <h2>Gorduras e óleos</h2>
+
+                <img src="img/gorduras.png" 
+                    alt="Exemplos de alimentos que contêm gorduras e óleos">
+
+                <p>
+                    As gorduras e os óleos são formados principalmente por
+                    triglicerídeos. Eles funcionam como reserva de energia
+                    e ajudam no isolamento térmico. Em geral, as gorduras
+                    são sólidas à temperatura ambiente, enquanto muitos
+                    óleos são líquidos.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Fosfolipídios</h2>
+
+                <img src="img/fosfolipideos.jpg"
+                    alt="Representação de uma molécula de fosfolipídio">
+
+                <p>
+                    Os fosfolipídios são componentes fundamentais das
+                    membranas celulares. Eles possuem uma região que interage
+                    com a água e outras regiões que evitam esse contato,
+                    formando uma bicamada que separa o interior da célula
+                    do ambiente externo.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Esteroides</h2>
+
+                <img src="img/esteroide.jpg"
+                    alt="Representação da estrutura química de um esteroide">
+
+                <p>
+                    Os esteroides são um grupo de lipídios que inclui o
+                    colesterol e alguns hormônios. O colesterol participa
+                    da composição das membranas celulares e é utilizado
+                    pelo organismo na produção de determinados hormônios.
+                </p>
+            </article>
+
+        </section>
+
+        <section class="conteudo">
+
+            <header>Principais funções dos lipídios</header>
+
+            <p>
+                <strong>Reserva energética:</strong> armazenam energia
+                que pode ser utilizada pelo organismo quando necessário.
+            </p>
+
+            <p>
+                <strong>Isolamento térmico:</strong> ajudam a reduzir
+                a perda de calor em diversos animais.
+            </p>
+
+            <p>
+                <strong>Proteção:</strong> contribuem para proteger órgãos
+                contra impactos.
+            </p>
+
+            <p>
+                <strong>Composição celular:</strong> os fosfolipídios
+                participam da formação das membranas celulares.
+            </p>
+
+            <p>
+                <strong>Regulação:</strong> alguns lipídios, como certos
+                hormônios esteroides, participam da regulação de funções
+                do organismo.
+            </p>
+
+        </section>
+        <section>
+            <h2>Lipídios na alimentação e na saúde</h2>
+
+            <p>
+                Os lipídios fazem parte de uma alimentação equilibrada, pois
+                fornecem energia, ajudam na absorção de vitaminas e participam
+                do funcionamento do organismo.
+            </p>
+
+            <p>
+                Porém, é importante manter uma alimentação equilibrada,
+                pois o consumo excessivo de determinados tipos de gordura
+                pode prejudicar a saúde.
+            </p>
+        </section>
+
+        <section class="curiosidade">
+            <header>Você sabia?</header>
+
+            <p>
+                Os lipídios fornecem aproximadamente 9 quilocalorias por
+                grama, mais que o dobro da energia fornecida por um grama
+                de carboidratos ou proteínas. Por isso, são importantes
+                para o armazenamento de energia no organismo.
+            </p>
+        </section>
+         <section class="curiosidade">
+            <h2>Quer saber mais?</h2>
+            <button type="button" id="abrir-modal">Ver curiosidade</button>
+        </section>
+
+        <div class="modal" id="modal-lipidios" hidden>
+            <div class="modal-conteudo">
+                <button type="button" id="fechar-modal">Fechar</button>
+                <h2>Curiosidade sobre os lipídios</h2>
+                <p>
+                    Os lipídios fazem parte das membranas celulares e também
+                    ajudam no armazenamento de energia e no isolamento térmico.
+                </p>
+            </div>
+        </div>
+        <div class="voltar">
+            <a href="index.html">Voltar para a página inicial</a>
+        </div>
+    </main>
+    <footer>
+        <p>Quimicou, 2026</p>
+    </footer>
+</body>
+</html>

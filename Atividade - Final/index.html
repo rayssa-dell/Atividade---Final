@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+    <title>Quimicou</title>
+</head>
+<body>
+
+    <button class="tema-btn" id="mudar-tema" type="button">
+        Mudar tema
+    </button>
+
+    <header class="cabecalho">
+        <h1>Quimicou</h1>
+        <p>Valesca Kaely de Lima Viana</p>
+        <p>Rayssa Maria Oliveira Ferreira</p>
+        <p>Vitória Lourrayne da Silva Oliveira</p>
+        <p>Gustavo Linhares Candido</p>
+        <p>3º informática vespertino</p>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <h2>QUIMICOU</h2>
+            <p>
+                As macromoléculas são moléculas grandes e importantes
+                para o funcionamento dos seres vivos. Muitas são formadas
+                pela união de moléculas menores e participam da estrutura
+                das células, do armazenamento de energia e das funções
+                vitais do organismo.
+            </p>
+        </section>
+
+        <section class="slider" aria-label="Galeria de imagens">
+        <button id="anterior" type="button"
+             aria-label="Imagem anterior">
+             ◀
+        </button>
+            <div class="janela-slide">
+                <div class="imagens">
+                    <img src="img/img1.jpg"
+                        alt="Imagem 1">
+                    <img src="img/img2.webp"
+                        alt="Imagem 2">
+                    <img src="img/img3.jpg"
+                        alt="Imagem 3">
+                    <img src="img/img4.png"
+                        alt="Imagem 4">
+                    <img src="img/img5.jpg"
+                        alt="Imagem 5">
+                </div>
+            </div>
+            <button id="proximo" type="button"
+                aria-label="Próxima imagem">
+                ▶
+            </button>
+
+        </section>
+        <button type="button" class="menu-botao" aria-label="Abrir menu">☰
+        </button>
+        <nav class="menu" id="menu">
+            <a href="index.html" class="ativo">Início</a>
+            <a href="#contato">Contato</a>
+            <a href="acidos-nucleicos.html">Ácidos nucleicos</a>
+            <a href="carboidratos.html">Carboidratos</a>
+            <a href="lipidios.html">Lipídios</a>
+            <a href="polimeros.html">Polímeros</a>
+            <a href="proteinas.html">Proteínas</a>
+            <a href="quiz.html">Quiz</a>
+
+        </nav>
+
+        <section class="ferramentas">
+    <input type="text" id="pesquisa" placeholder="Pesquisar macromolécula">
+
+    <select id="filtro">
+        <option value="todos">Todas as categorias</option>
+        <option value="alimentacao">Alimentação</option>
+        <option value="saude">Saúde</option>
+        <option value="tecnologia">Tecnologia</option>
+        <option value="meio-ambiente">Meio ambiente</option>
+    </select>
+
+    <p id="mensagem-busca" hidden>Nenhum resultado encontrado.</p>
+        </section>
+       
+<section class="cards">
+
+    <article class="card" data-categoria="tecnologia">
+        <h2>Ácidos nucleicos</h2>
+        <p>
+            São moléculas responsáveis por armazenar e transmitir
+            as informações genéticas dos seres vivos. Os principais
+            são o DNA e o RNA.
+        </p>
+
+        <img src="img/acidos-nucleicos.jpg"
+            alt="Ácidos nucleicos">
+
+        <a class="saiba-mais"
+            href="acidos-nucleicos.html">
+            Saiba mais
+        </a>
+    </article>
+
+    <article class="card" data-categoria="alimentacao saude">
+        <h2>Carboidratos</h2>
+        <p>
+            São nutrientes que fornecem energia para o organismo.
+            São encontrados em alimentos como pães, massas,
+            arroz e frutas.
+        </p>
+
+        <img src="img/carboidratos2.png"
+            alt="Carboidratos">
+
+        <a class="saiba-mais"
+            href="carboidratos.html">
+            Saiba mais
+        </a>
+    </article>
+
+    <article class="card" data-categoria="alimentacao saude">
+        <h2>Lipídios</h2>
+        <p>
+            São gorduras que armazenam energia, protegem os órgãos
+            e ajudam a manter a temperatura corporal. Estão
+            presentes em óleos, manteiga e abacate.
+        </p>
+
+        <img src="img/lipidiosgordura.webp"
+            alt="Lipídios">
+
+        <a class="saiba-mais"
+            href="lipidios.html">
+            Saiba mais
+        </a>
+    </article>
+
+    <article class="card" data-categoria="tecnologia meio-ambiente">
+        <h2>Polímeros</h2>
+        <p>
+            São moléculas grandes formadas pela união de moléculas
+            menores chamadas monômeros. Podem ser naturais,
+            como proteínas, ou sintéticos, como plásticos.
+        </p>
+
+        <img src="img/polimeros.png"
+            alt="Polímeros">
+
+        <a class="saiba-mais"
+            href="polimeros.html">
+            Saiba mais
+        </a>
+    </article>
+
+    <article class="card" data-categoria="alimentacao saude">
+        <h2>Proteínas</h2>
+        <p>
+            São moléculas formadas por aminoácidos. Ajudam na
+            construção e reparação dos tecidos e participam de
+            funções importantes, como a defesa do organismo.
+        </p>
+
+        <img src="img/proteinas.jpg"
+            alt="Proteínas">
+
+        <a class="saiba-mais"
+            href="proteinas.html">
+            Saiba mais
+        </a>
+    </article>
+
+</section>
+
+    </main>
+    <footer id="contato">
+        <p>QUIMICOU, 2026</p>
+    </footer>
+</body>
+</html>

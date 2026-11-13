@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+    <title>Quiz | Quimicou</title>
+</head>
+<body>
+
+    <button class="tema-btn" id="mudar-tema" type="button">
+        Mudar tema
+    </button>
+
+    <header class="cabecalho">
+        <h1>Quimicou</h1>
+        <p>Teste seus conhecimentos sobre macromoléculas!</p>
+    </header>
+    <button type="button" class="menu-botao" aria-label="Abrir menu">☰
+    </button>
+
+    <nav class="menu">
+        <a href="quiz.html" class="ativo">Quiz</a>
+        <a href="index.html">Início</a>
+        <a href="acidos-nucleicos.html">Ácidos nucleicos</a>
+        <a href="carboidratos.html">Carboidratos</a>
+        <a href="lipidios.html">Lipídios</a>
+        <a href="polimeros.html">Polímeros</a>
+        <a href="proteinas.html">Proteínas</a>
+    </nav>
+
+    <main>
+
+        <section class="apresentacao">
+            <h2>Quiz das macromoléculas</h2>
+
+            <p>
+                Responda às cinco perguntas abaixo e descubra quantas
+                você consegue acertar. Escolha apenas uma alternativa
+                por questão e, ao terminar, clique em "Ver resultado".
+            </p>
+        </section>
+
+        <section class="conteudo">
+
+            <form id="quiz-form">
+
+                <fieldset>
+                    <legend>
+                        <strong>1. Qual é a principal função do DNA?</strong>
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="q1" value="a" required>
+                        Fornecer energia imediata para as células.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        Armazenar informações genéticas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        Formar a parede celular das plantas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        Atuar exclusivamente como reserva de gordura.
+                    </label>
+                    <p id="feedback-q1"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <strong>2. Qual carboidrato funciona como reserva energética nas plantas?</strong>
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="q2" value="a" required>
+                        Amido.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Colágeno.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Colesterol.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        DNA.
+                    </label>
+                    <p id="feedback-q2"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <strong>3. Qual é uma das principais funções das proteínas?</strong>
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="q3" value="a" required>
+                        Armazenar toda a informação genética das células.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Impedir todas as reações químicas do organismo.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Participar da estrutura dos tecidos e acelerar reações químicas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        Substituir completamente a água nas células.
+                    </label>
+                    <p id="feedback-q3"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <strong>4. Qual é a principal função dos lipídios?</strong>
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="q4" value="a" required>
+                        Armazenar energia.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        Armazenar informações genéticas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        Formar aminoácidos.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        Produzir glicose.
+                    </label>
+                    <p id="feedback-q4"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <strong>5. Como são chamadas as unidades menores que formam os polímeros?</strong>
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="q5" value="a" required>
+                        Nucleotídeos.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        Monômeros.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        Enzimas.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        Lipídios.
+                    </label>
+                    <p id="feedback-q5"></p>
+                </fieldset>
+
+                <button type="submit">Ver resultado</button>
+                <button type="reset" id="reiniciar-quiz">Refazer quiz</button>
+                <p id="resultado-quiz" aria-live="polite"></p>
+            </form>
+        </section>
+        <div class="voltar">
+            <a href="index.html">Voltar para a página inicial</a>
+        </div>
+    </main>
+    <footer>
+        <p>Quimicou, 2026</p>
+    </footer>
+</body>
+</html>
